@@ -1,0 +1,82 @@
+body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #2c1810, #8b4513, #000);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Courier New', monospace;
+            overflow: hidden;
+        }
+
+        .game-container {
+            text-align: center;
+            color: white;
+        }
+
+        canvas {
+            border: 2px solid #ff7300;
+            background: linear-gradient(to bottom, #000033, #000066, #003300);
+            box-shadow: 0 0 30px #ff5e00;
+        }
+
+        .hud {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .score {
+            color: #ffffff;
+        }
+
+        .distance {
+            color: #ffffff;
+        }
+
+        .speed {
+            color: #ffffff;
+        }
+
+        .controls {
+            margin-top: 20px;
+            color: #ffffff;
+        }
+
+        .game-over {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            display: none;
+            text-align: center;
+        }
+
+        button {
+            background-color: #ff5e00;
+            border: none;
+            color: white;
+            padding: 12px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #000;
+            color: aliceblue;
+            transform: scale(1.05);
+        }
+
+        .instructions {
+            font-size: 14px;
+            margin-top: 10px;
+            color: #aaaaaa;
+        }
