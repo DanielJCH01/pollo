@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/juego2.css">
+</head>
+<body>
+    
+    <div class="game-container">
+        <div class="hud">
+            <div class="score">Puntos: <span id="score">0</span></div>
+            <div class="distance">Distancia: <span id="distance">0</span>m</div>
+            <div class="speed">Velocidad: <span id="speed">1</span>x</div>
+        </div>
+        <canvas id="gameCanvas" width="900" height="600"></canvas>
+        <div class="controls">
+            <p>Usa las flechas ↑↓←→ para esquivar obstáculos</p>
+            <button onclick="startGame()">Iniciar Misión</button>
+        </div>
+        
+        <div class="game-over" id="gameOver">
+            <h2 style="color: #ff4444;">¡Nave Destruida!</h2>
+            <p>Puntuación Final: <span id="finalScore">0</span></p>
+            <p>Distancia Recorrida: <span id="finalDistance">0</span>m</p>
+            <div class="instructions">
+                <p>¡Intenta llegar más lejos la próxima vez!</p>
+            </div>
+            <button onclick="startGame()">Nueva Misión</button>
+        </div>
+    </div>
+
+<script src="/juego2.js" ></script>
+
+</body>
+</html>
